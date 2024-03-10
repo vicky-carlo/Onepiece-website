@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: url('/public/anime.jpeg') lightgray 50% / cover no-repeat;
+width: 1802px;
+height: 1024px;
+flex-shrink: 0; 
+ 
+}
+nav div.frame-1{
+    color: white;
+    display: inline-flex;
+    padding: 32px 64px;
+    align-items: flex-start;
+    gap: 64px;
+}
+nav div.frame-2{
+    display: inline-flex;
+    text-decoration: solid;
+    font-weight: 700;
+    margin-left: 30px;
+    padding: 16px 10px;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--Color-2, #CAE962);
+    font-family: Poppins;
+}
+nav div.frame-3{
+    color: white;
+    display: inline-flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 60px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+.body-text{
+    display: inline-flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 48px;
+}
+.topic-text{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.topic-text-head{
+    color: var(--Color-2, #CAE962);
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.topic1-head{
+    width: 476px;
+    color: #FFF;
+font-family: Oswald;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.topic1-content{
+    color: rgba(248, 247, 249, 0.75);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.stars{
+    display: flex;
+    align-items: flex-start;
+}
