@@ -1,80 +1,179 @@
+
 *{
-    box-sizing: border-box;
-}
-body{
     margin: 0;
-    background: url('/public/anime.jpeg') lightgray 50% / cover no-repeat;
-width: 1802px;
-height: 1024px;
-flex-shrink: 0; 
- 
 }
-nav div.frame-1{
-    color: white;
-    display: inline-flex;
-    padding: 32px 64px;
-    align-items: flex-start;
-    gap: 64px;
+body {
+  margin: 30px;
+  background-image: url("/public/image27.jpeg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-nav div.frame-2{
-    display: inline-flex;
-    text-decoration: solid;
-    font-weight: 700;
-    margin-left: 30px;
-    padding: 16px 10px;
-    align-items: flex-start;
-    gap: 10px;
-    color: var(--Color-2, #CAE962);
-    font-family: Poppins;
+a{
+  color: yellow;
+  font-weight: 1000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
 }
-nav div.frame-3{
-    color: white;
-    display: inline-flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-left: 60px;
-    align-items: center;
+
+.nav1{
+    display: flex;
+    color: #fff;
     justify-content: space-between;
-    gap: 48px;
+    align-items: center;
+    
 }
-.body-text{
-    display: inline-flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 48px;
-}
-.topic-text{
+.navbar-text{
     display: flex;
-flex-direction: column;
-align-items: flex-start;
+    align-items: flex-end;
+    margin-left: auto;
+    padding-right: 70px;
+    gap: 30px;
+    
 }
-.topic-text-head{
-    color: var(--Color-2, #CAE962);
-font-family: Poppins;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.icon{
+  font-size: 30px;
+  color: #ca9b03;
 }
-.topic1-head{
-    width: 476px;
-    color: #FFF;
-font-family: Oswald;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.navbar-text p {
+    padding-bottom:10px;
+    margin-right: 20px;
 }
-.topic1-content{
-    color: rgba(248, 247, 249, 0.75);
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-.stars{
+button {
+    --primary-color: #645bff;
+    --secondary-color: yellow;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
     display: flex;
-    align-items: flex-start;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
+  }
+
+
+.icon{
+  padding-left: 40px;
+}
+.content1{
+  color: #fff;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 360px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 100px;
+}
+.content2{
+  font-size: larger;
+  display: block;
+  padding-left: 100px;
+}
+.content3{
+  padding-top: 20px;
+  padding-right: 100px;
+}
+.content4{
+  padding-top: 20px;
+  padding-left: 140px;
+  display: flex;
+  gap: 20px;
+}
+span{
+  padding-left: 7px;
+  font-size: larger;
+  color: #ca9b03;
+}
+
+.hero-cards{
+  color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+}
+.hero-cards::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+.hero-cards::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make scrollbar thumb transparent */
+}
+.hero-container{
+  color: rgb(243, 244, 246);
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         
+  display: flex;          
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 20px;
+}
+.hero-img{
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+.hero-title{
+  overflow: hidden;
+  color: #ca9b03;
+  text-overflow: ellipsis;
+}
+.hero-about{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.video{
+  padding-left: 380px;
+  
 }
